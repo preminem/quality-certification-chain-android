@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.QueryCertificate">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_query_certificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_hue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="证书查询"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/query_certificate_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:entries="@array/query_certificate"
+        android:gravity="center" />
+
+    <GridView
+        android:id="@+id/query_certificate_grid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:numColumns="5"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/query_certificate_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/query_certificate_num_Edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:hint="证书编号"
+            android:textColorHint="#B7B7B7"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/query_certificate_unitID_Edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:hint="营业执照编号"
+            android:textColorHint="#B7B7B7"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/query_certificate_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonshape"
+            android:text="查询"
+            android:textColor="#FFFFFF" />
+
+        <GridView
+            android:id="@+id/query_certificate_grid2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:numColumns="2" />
+    </LinearLayout>
+
+</LinearLayout>

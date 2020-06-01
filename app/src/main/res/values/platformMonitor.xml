@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="platform_monitor">
+        <item>区块链状态监控</item>
+        <item>区块信息监控</item>
+        <item>交易信息实时监控</item>
+    </string-array>
+</resources>

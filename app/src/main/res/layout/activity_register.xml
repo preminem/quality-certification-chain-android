@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="用户信息录入"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/institutionNumber"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="机构编号"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <!--        <EditText-->
+            <!--            android:layout_width="320dp"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:gravity="center"-->
+            <!--            android:hint="机构名字"-->
+            <!--            android:textSize="20dp"-->
+            <!--            android:textColor="#FFFFFF"-->
+            <!--            android:textColorHint="#B7B7B7"-->
+            <!--            android:id="@+id/institutionName"-->
+            <!--            android:background="@drawable/editsshape"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:singleLine="true"-->
+            <!--            android:layout_gravity="center"/>-->
+            <!--        <EditText-->
+            <!--            android:layout_width="320dp"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:gravity="center"-->
+            <!--            android:hint="机构类型"-->
+            <!--            android:textSize="20dp"-->
+            <!--            android:textColor="#FFFFFF"-->
+            <!--            android:textColorHint="#B7B7B7"-->
+            <!--            android:id="@+id/institutionType"-->
+            <!--            android:background="@drawable/editsshape"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:singleLine="true"-->
+            <!--            android:layout_gravity="center"/>-->
+            <Spinner
+                android:id="@+id/usertypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:entries="@array/user_types"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/IDCard"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="身份证号码"
+                android:singleLine="true"
+                android:textColorHint="#B7B7B7"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/realname"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="真实姓名"
+                android:singleLine="true"
+                android:textColorHint="#B7B7B7"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="用户名(中文无效)"
+                android:singleLine="true"
+                android:textColorHint="#B7B7B7"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/passwd"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:textColorHint="#B7B7B7"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/passwd1"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:textColorHint="#B7B7B7"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:text="注册"
+                android:textColor="#FFFFFF" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/goLogin"-->
+            <!--                android:layout_width="320dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:background="@drawable/buttonshape"-->
+            <!--                android:text="已有账号,直接登陆"-->
+            <!--                android:textColor="#FFFFFF" />-->
+            <TextView
+                android:id="@+id/goLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:text="已有账号,直接登陆" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
