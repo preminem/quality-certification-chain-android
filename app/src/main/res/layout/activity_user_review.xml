@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UserReview">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_user_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_hue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户审核"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <Spinner
+        android:id="@+id/user_review_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:entries="@array/user_review"
+        android:gravity="center" />
+
+    <GridView
+        android:id="@+id/user_review_grid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:numColumns="4" />
+
+    <GridView
+        android:id="@+id/user_review_grid2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="5"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>
